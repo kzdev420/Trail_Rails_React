@@ -1,0 +1,148 @@
+/* NAVBAR */
+.text-logo {
+  width: 20%;
+  height: 20%;
+}
+
+.image-logo {
+  width: 90px;
+  height: 67px;
+}
+
+
+/* TRAILS HOMEPAGE */
+.trails-map {
+  width: 100%;
+  height: 490px;
+}
+
+#trail-summary {
+  height: 45px;
+  overflow-y: scroll;
+}
+
+#trail-card {
+  width: 24rem;
+  margin: 1em;
+}
+
+#trail-card-image {
+  object-fit: cover;
+  height: 20rem;
+  width: 24rem;
+  align-self: center;
+}
+
+#trail-difficulty-img {
+  border-radius: 10px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+/* PROFILE PAGE */
+.user-profile {
+  margin: auto;
+}
+
+
+
+#trail-list {
+  text-align: left;
+}
+
+.trail-detail-map {
+  width: 60vw;
+  max-width: 1200px;
+  height:410px;
+}
+
+#carousel {
+  border-radius: 30px;
+  padding: 10px 100px;
+}
+
+#carousel-item {
+  border-radius: 30px;
+  padding: 10px 100px;
+}
+
+#trip-card {
+  padding: 10px 20px;
+  width: 100%;
+  margin: 1em;
+  height: 550px;
+}
+
+#trip-card-image {
+  object-fit: cover;
+  height: 20rem;
+  width: 100%;
+  align-self: center;
+}
+
+#trip-modal-image {
+  object-fit: cover;
+  height: 25rem;
+  width: 20rem;
+  align-self: center;
+}
+
+div.carousel.slide {
+  width: 60vw;
+  background-color: rgb(209, 209, 209);
+  padding: 50px 0;
+  margin: auto;
+}
+
+
+ /* TRIP FORM  */
+.trails-checklist {
+  text-align: left;
+  height: 200px;
+  overflow-y: scroll;
+  border: 2px solid rgb(209, 209, 209);
+  border-radius: 8px;
+  padding: 10px 20px;
+}
+
+.trails-checklist input { 
+  margin: 10px 0; 
+}
+
+
+/* TRIP MODAL */
+#trip-show-modal {
+  border-radius: 8px;
+  padding: 10px 20px;
+  width: 45%;
+  height: 90%;
+  margin: auto;
+  text-align: center;
+  overflow-y: scroll;
+}
+
+/* FOLLOWER FEED */
+#follower-row {
+  padding: 10px 20px;
+}
+
+
+/* CSS FROM REACT SHARDS */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
