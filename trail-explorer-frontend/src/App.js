@@ -1,6 +1,7 @@
 import React from 'react'
-import { Switch, Route, Redirect } from 'react-router-dom'
+import { Switch,  Route, Redirect } from 'react-router-dom'
 import { connect } from 'react-redux'
+import history  from './history.js';
 
 import Navbar from "./Components/Navbar"
 import Login from "./Components/Login"
@@ -15,6 +16,8 @@ import AllUsers from "./Components/AllUsers"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "shards-ui/dist/css/shards.min.css"
 import './App.css'
+
+
 
 class App extends React.Component {
 
@@ -31,10 +34,11 @@ class App extends React.Component {
     }
   }
 
+  
   render() {
     return (
       <div className="App">
-        <Navbar />
+        <Navbar history={history} />
         {
           localStorage.token && !this.props.user.id ?
           null

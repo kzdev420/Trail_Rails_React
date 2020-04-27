@@ -53,6 +53,8 @@ class NavExample extends React.Component {
   }
 
   render() {
+    console.log("history-----------------------------------");
+    console.log(this.props.history);
     return (
       
       <Navbar type="light" theme="light" expand="md">
@@ -92,9 +94,9 @@ class NavExample extends React.Component {
                         <DropdownItem  href="/edit-profile" >Edit</DropdownItem>
                       </DropdownMenu>
                   </Dropdown>
-
+                  
                   <NavItem>
-                    <NavLink active onClick={()=> this.props.dispatch({ type: 'LOG_OUT' }) }>
+                    <NavLink active onClick={()=> { this.props.dispatch({ type: 'LOG_OUT' }); }} href= "/">
                       Log Out
                     </NavLink>
                   </NavItem> 

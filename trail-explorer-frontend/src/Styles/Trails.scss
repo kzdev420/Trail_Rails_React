@@ -1,0 +1,20 @@
+.trails-map{
+    height: 510px;
+}
+.LocationSearchInput{
+    text-align: left;
+    margin: 10px 0px 30px 40px;
+    input{
+        font-size: 22px;
+        border-radius: 5px;
+        padding: 5px 15px;
+        width: 550px;
+    }
+    .autocomplete-dropdown-container{
+        border: solid 1px #e2dcdc;
+        width: 550px;
+        font-size: 22px;
+        border-radius: 5px;
+        padding: 0px 10px;
+    }
+}

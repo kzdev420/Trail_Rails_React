@@ -127,9 +127,11 @@ trail5 = Trail.create(
 )
 
 25.times do
+    user_randonm_id = User.all.sample.id
+    user_random_name = User.find(user_randonm_id).name
     Trip.create(
-      user_id: User.all.sample.id,
-      title: User.all.sample.name + "'s Hiking Trip",
+      user_id: user_randonm_id,
+      title: user_random_name + "'s Hiking Trip",
       description: Faker::Books::Dune.quote,
       location: (Faker::Address.city + ", " + Faker::Address.state),
       stars: rand(1..5),
